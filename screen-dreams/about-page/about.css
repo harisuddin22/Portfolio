@@ -1,0 +1,329 @@
+:root {
+  --main-background-color: rgb(0, 0, 0);
+  --primary-color: #1b1b1b;
+  --secondary-color: #141414;
+  --accent-color: rgba(255, 0, 0, 0.89);
+  --font-family: system-ui;
+}
+
+* {
+  font-family: system-ui;
+  transition: all 0.4s;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color:var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--main-background-color);
+  box-shadow: 0 10px 80px rgba(255, 255, 255, 0.03);
+}
+
+header div {
+  margin: 0 1rem;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.left-section {
+  display: flex;
+  flex: 1;
+}
+
+.logo {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+
+.logo:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logo:active {
+  opacity: 0.5;
+  transition: none;
+}
+
+.middle-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.5rem;
+}
+
+option {
+  outline: none;
+  background: rgb(28, 28, 28);
+  color: white;
+}
+
+.searchbar {
+  padding: 0.5rem 1rem;
+  flex: 1;
+  max-width: 30rem;
+  min-width: 5rem;
+  outline: none;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: large;
+}
+
+.searchbar:focus {
+  padding: 1rem 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255);
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 0.3rem;
+  justify-content: flex-end;
+}
+
+.right-section button {
+  border: none;
+  background-color: var(--main-background-color);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.right-section button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.right-section button:active {
+  opacity: 0.5;
+  transition: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  font-size: large;
+}
+
+.about-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:5rem;
+  font-size:1.6rem;
+  color: white;
+}
+
+.about-title h1{
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+@media(max-width:1200px){
+  main{
+    grid-template-columns:1fr;
+  }
+}
+
+main div {
+  margin: 0.5rem;
+  margin-top:2rem;
+  border-radius: 0.7rem;
+  text-align:start;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: larger;
+  overflow: hidden;
+  background-color: var(--main-background-color);
+}
+
+main div img{
+  height:30vh;
+  margin: 0;
+}
+
+main div span{
+  font-size: xx-large;
+  line-height: rem;
+}
+
+main div p{
+  margin: 1rem;
+}
+
+main div::first-letter{
+  font-size: larger;
+}
+
+main h1 {
+  margin-top: 2;
+  margin-left: 2rem;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.footer {
+  background-color:var(--secondary-color);
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  margin-top: 20px;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+}
+.content-div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: xx-large;
+  white-space: nowrap;
+}
+
+.about{
+    font-size:22px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin:0px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  font-size:1.2rem;
+}
+
+.links li {
+  margin-bottom: 5px;
+}
+
+.links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  color: white;
+}
+
+.links a:hover {
+  color:rgb(154, 154, 154);
+}
+
+.form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.email-input {
+  flex: 1;
+  border:none;
+  padding: 0.7rem 2rem;
+  padding-left:0.5rem;
+  outline: none;
+  font-size: large;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.subscribe-button {
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  font-size: larger;
+  cursor: pointer;
+  color: white;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.form button:hover {
+  opacity: 0.8;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+  margin-top: 1.5rem;
+}
+
+.social-image{
+  height:4vh;
+}
+
+.social-image:hover{
+  opacity:0.7;
+}
+
+.social-image:active{
+  opacity:0.4;
+  transition: none;
+}
+
+.social a {
+  color: var(--primary-color);
+  margin: 0 5px;
+  font-size: 24px;
+}
+
+.social a:hover {
+  color:blue;
+}
+
+.copy {
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid var(--primary-color);
+  padding: 10px;
+}
+
+.copyright-div a{
+  color:rgb(216, 216, 216);
+}

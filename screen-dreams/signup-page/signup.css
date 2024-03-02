@@ -1,0 +1,231 @@
+:root {
+    --main-background-color: rgb(0, 0, 0);
+    --primary-color: #333;
+    --secondary-color: #444444;
+    --accent-color: rgba(255, 0, 0, 0.89);
+    --font-family: system-ui;
+  }
+
+* {
+  font-family: system-ui;
+  transition: all 0.4s;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--main-background-color);
+  box-shadow: 0 10px 80px rgba(255, 255, 255, 0.03);
+}
+
+header div {
+  margin: 0 1rem;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.left-section {
+  display: flex;
+  flex: 1;
+}
+
+.logo {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+
+.logo:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logo:active {
+  opacity: 0.5;
+  transition: none;
+}
+
+.middle-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.5rem;
+}
+
+option {
+  outline: none;
+  background: rgb(28, 28, 28);
+  color: white;
+}
+
+.searchbar {
+  padding: 0.5rem 1rem;
+  flex: 1;
+  max-width: 30rem;
+  min-width: 5rem;
+  outline: none;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: large;
+}
+
+.searchbar:focus {
+  padding: 1rem 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255);
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 0.3rem;
+  justify-content: flex-end;
+}
+
+.right-section button {
+  border: none;
+  background-color: var(--main-background-color);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.right-section button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.right-section button:active {
+  opacity: 0.5;
+  transition: none;
+}
+
+form {
+  border:1px solid white;
+  padding: 2rem;
+  background-color:var(--main-background-color);
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form h1 {
+  color: rgb(255, 255, 255);
+}
+
+form p {
+  margin: 0.5rem;
+  font-size: larger;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.input-titles {
+  margin: 0;
+}
+
+form input {
+  border: solid 1px rgb(255, 255, 255);
+  padding: 0.5rem;
+  width: 22rem;
+  border-radius: 0.3rem;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+form input:focus {
+  padding: 0.8rem;
+  transition: all 0.25s;
+}
+
+.email-and-password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+  gap: 0.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.signup-with-p {
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+.other-choise-container {
+  display: flex;
+  align-items: center;
+}
+
+.social-image {
+  height: 2rem;
+  border-radius: 50%;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.social-image:hover {
+  opacity: 0.6;
+  transition: all.25s;
+}
+
+.social-image:active {
+  opacity: 0.3;
+  transition: none;
+}
+
+.submit-button-container {
+  margin-top: 1rem;
+}
+
+.submit-button {
+  padding: 0.7rem 2rem;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  background-color: transparent;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 0.3rem;
+}
+
+.submit-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.submit-button:active {
+  opacity: 0.6;
+  transition: none;
+}
