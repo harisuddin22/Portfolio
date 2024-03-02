@@ -1,0 +1,167 @@
+:root {
+  --main-background-color: rgb(0, 0, 0);
+  --primary-color: #1b1b1b;
+  --secondary-color: #ffffff;
+  --accent-color: rgb(0, 0, 0);
+  --font-family: system-ui;
+}
+
+* {
+  transition: all 0.25s;
+  scroll-behavior: smooth;
+  font-family: system-ui;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(backgrounds/5594016.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height:4rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(7px);
+  z-index:10;
+}
+
+.left-section {
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content:flex-start;
+  margin-left: 1rem;
+}
+
+.left-section a {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: "myFirstFont";
+  src: url(fonts/Revamped.otf);
+}
+
+h1 {
+  font-family: myFirstFont;
+}
+
+.logo{
+  letter-spacing: 0.3rem;
+  font-weight: lighter;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.2;
+  transition: none;
+}
+
+.right-section {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+  margin-right: 1rem;
+}
+
+.header-buttons {
+  padding: 0.3rem 1rem;
+  font-size: large;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: system-ui;
+  font-weight: 400;
+  border-radius: 0.15rem;
+}
+
+.header-buttons:hover {
+  background-color: rgb(75, 75, 75);
+  color: rgb(255, 255, 255);
+}
+
+.header-buttons:active {
+  opacity: 0.5;
+  transition: none;
+}
+
+main{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 13vh;
+  letter-spacing: 0.3rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.subject{
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: column;
+  height:5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started{
+  padding:0.6rem 1rem;
+  font-size:2vh;
+  height:6vh;
+  width: 18vw;
+  white-space: nowrap;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.get-started:hover{
+  padding:0.7rem 1.1rem;
+  opacity:0.7;
+  transition:0.15s;
+}
+
+.get-started:active{
+  opacity: 0.4;
+  transition: none;
+}
