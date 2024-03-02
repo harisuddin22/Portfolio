@@ -1,0 +1,237 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(242, 249, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 5rem;
+    background-color: rgb(50, 170, 255);
+}
+
+.left-section{
+    margin: 0;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    font-family:system-ui;
+    letter-spacing:.1rem;
+    font-size:1.2rem;
+    flex: 1;
+}
+
+.logo{
+    margin: 0;
+}
+
+.left-section a{
+    text-decoration: none;
+    color: white;
+}
+
+.middle-section{
+    display:flex;
+    flex: 1;
+    justify-content:center;
+    align-items: center;
+}
+
+.search-bar{
+    padding: .5rem;
+    border: none;
+    transition: all .35s;
+    flex: 1;
+    border-radius:0.2rem;
+    font-size: medium;
+    padding-left:1rem;
+}
+
+.search-bar:focus{
+    outline:none;
+    padding: .7rem;
+    transition: all .35s;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0.7rem;
+    flex: 1;
+}
+
+.buttons-container{
+    display: flex;
+    height:2.5rem;
+    width: 11rem;
+    margin-right: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signup-button{
+    padding:0.4rem .7rem;
+    border: none;
+    margin:0.6rem;
+    border-radius: 0.2rem;
+    white-space: nowrap;
+    font-family: system-ui;
+    font-weight: 500;
+    font-size: medium;
+    background-color: white;
+    color: rgb(0, 162, 255);
+  }
+  
+  .signup-button:hover{
+    background-color: rgb(226, 248, 255);
+    transition: .25s;
+  }
+  
+  .signup-button:active{
+    background-color: rgb(129, 196, 216);
+    color: white;
+    transition: none;
+  }
+  
+
+.menu-image{
+    height: 4rem;
+}
+
+.menu-button{
+    border: none;
+    background-color: rgb(50, 170, 255);
+    padding: 0;
+}
+
+.menu-button:hover{
+    opacity: 0.8;
+    transition:.25s;
+}
+
+.menu-button:active{
+    opacity: 0.6;
+    transition: none;
+}
+
+section{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 5rem;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+    padding-left: 1rem;
+    background-color: rgb(111, 200, 255);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.section-buttons{
+    padding:0.2rem .7rem;
+    border: none;
+    margin:0.6rem;
+    border-radius: 0.2rem;
+    white-space: nowrap;
+    font-family: system-ui;
+    font-weight: 500;
+    font-size: medium;
+    background-color: white;
+    color: rgb(0, 162, 255);
+}
+
+.section-buttons:hover{
+    background-color: rgb(226, 248, 255);
+    transition: .25s;
+}
+
+.section-buttons:active{
+    background-color: rgb(129, 196, 216);
+    color: white;
+    transition: none;
+}
+
+.section-buttons a{
+    text-decoration: none;
+    color: rgb(0, 195, 255);
+}
+
+.section-buttons a:active{
+    color:white;
+}
+
+#download-button{
+    border: solid .3rem rgb(30, 161, 255);
+    border-radius:0.5rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    margin-top: 25rem;
+    margin-bottom:3rem;
+    font-family: system-ui;
+    font-weight: 400;
+    color:rgb(0, 154, 238);
+}
+
+main input{
+    height:3rem;
+    padding-left: 1rem;
+    width: 45rem;
+    font-size: medium;
+    outline: none;
+    border: none;
+    box-shadow:0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-button{
+    margin-top:2rem;
+    padding: 0.8rem 2rem;
+    border-radius:0.4rem;
+    border:none;
+    color: rgb(0, 159, 238);
+    font-family: system-ui;
+    font-size: medium;
+    letter-spacing: .1rem;
+    background-color: rgb(210, 235, 255);
+}
+
+.download-button:hover{
+    background-color: rgb(176, 219, 255);
+    transition: .25s;
+}
+
+.download-button:active{
+    background-color: rgb(185, 205, 221);
+    color: white;
+    transition: none;
+}

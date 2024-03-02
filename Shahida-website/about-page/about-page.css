@@ -1,0 +1,292 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    font-family: system-ui;
+    transition:all 0.4s;
+}
+
+body{
+    padding-bottom:1rem;
+}
+
+.main-header{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.main-header a{
+    text-decoration: none;
+}
+
+.left-section{
+    display: flex;
+    flex: 1;
+    padding-left:1rem;
+}
+
+.header-logo{
+    letter-spacing: 0.2rem;
+    color: black;
+    font-weight:1;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.header-logo:hover{
+    opacity: 0.9;
+}
+
+.header-logo:active{
+    opacity: 0.7;
+}
+
+.right-section{
+    display: flex;
+    flex: .39;
+    justify-content: space-between;
+    margin-right: 1rem;
+    gap:1rem;
+}
+
+.right-section button{
+    border: none;
+    font-size:1.3rem;
+    font-weight:500;
+    color: rgb(85, 85, 85);
+    background-color: rgb(255, 255, 255);
+    white-space: nowrap;
+}
+
+.right-section button:hover{
+    opacity: 0.8;
+    transition: .15s;
+}
+
+.right-section button:active{
+    opacity:0.6;
+    transition: none;
+}
+
+main{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-top:5rem;
+}
+
+main div{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding:1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+@media(max-width:1880px){
+    .about-container{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:1450px){
+    .about-container{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:1180px){
+    .about-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:840px){
+    .about-container{
+        grid-template-columns:1fr;
+    }
+}
+
+.about-container h1{
+    color: black;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.about-container p{
+    font-size: large;
+}
+
+.last-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding:1rem;
+    margin: 1rem;
+    border-radius:1rem;
+}
+
+.last-div h3{
+    font-weight: 400;
+}
+
+footer{
+    position: static;
+    height: 11.3rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:black;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.copyright-label{
+    display: flex;
+    justify-content: center;
+    background-color:#f4f4f4;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.copyright-label p{
+    color: #000000;
+    font-family: system-ui;
+    white-space: nowrap;
+    font-size: small;
+    margin: 0;
+}
+
+.links-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.links-container p{
+    color: white;
+    font-family: system-ui;
+    font-weight: 100;
+    margin: 0;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.footer-content h1{
+    font-family: system-ui;
+    margin:0;
+    font-weight: lighter;
+    color: white;
+}
+
+.social-links-container h2{
+    color: white;
+    font-family: system-ui;
+    font-weight: 100;
+    margin: 0;
+    font-size: xx-large;
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+}
+
+.social-links:hover{
+    opacity: 0.8;
+}
+
+.social-links:active{
+    opacity: 0.6;
+    transition: none;
+}
+
+.social-links img{
+    height: 1.4rem;
+}
+
+.social-links p{
+    color: white;
+    margin: 0.4rem;
+    font-family: system-ui;
+    cursor: default;
+
+}
+
+.contacts-container p{
+    color: white;
+    font-family: system-ui;
+    font-weight: 100;
+    margin: 0;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.subscription-section{
+    display: flex;
+    justify-content:flex-start;
+    padding-right: 1rem;
+}
+
+.subscription-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.subscription-section-content h2{
+    color: white;
+    font-family: system-ui;
+    font-weight: lighter;
+    font-size: xx-large;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.ask-for-games-bar{
+    padding:1rem;
+    border-radius:.4rem;
+    border: none;
+    font-size: medium;
+}
+
+.ask-for-games-bar:focus{
+    outline: none;
+}
+
+.submit-button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    border-radius: .4rem;
+    border: none;
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.submit-button:hover{
+    opacity: 0.8;
+}
+
+.submit-button:active{
+    opacity: 0.6;
+    transition: none;
+}

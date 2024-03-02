@@ -1,0 +1,314 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(242, 249, 255);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 11rem;
+    margin-top: 10rem;
+}
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+    margin:.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(106, 198, 255);
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(129, 196, 216);
+}
+
+::-webkit-scrollbar-thumb:active{
+    background-color: rgb(112, 151, 162);
+}
+
+header{
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 5rem;
+    background-color: rgb(50, 170, 255);
+}
+
+.left-section{
+    margin: 0;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    font-family:system-ui;
+    letter-spacing:.1rem;
+    font-size:1.2rem;
+    flex: 1;
+}
+
+.logo{
+    margin: 0;
+}
+
+.left-section a{
+    text-decoration: none;
+    color: white;
+}
+
+.middle-section{
+    display:flex;
+    flex: 1;
+    justify-content:center;
+    align-items: center;
+}
+
+.search-bar{
+    padding: .5rem;
+    border: none;
+    transition: all .35s;
+    flex: 1;
+    border-radius:0.2rem;
+    font-size: medium;
+    padding-left:1rem;
+}
+
+.search-bar:focus{
+    outline:none;
+    padding: .7rem;
+    transition: all .35s;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0.7rem;
+    flex: 1;
+}
+
+.buttons-container{
+    display: flex;
+    height:2.5rem;
+    width: 11rem;
+    margin-right: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signup-button{
+    padding:0.4rem .7rem;
+    border: none;
+    margin:0.6rem;
+    border-radius: 0.2rem;
+    white-space: nowrap;
+    font-family: system-ui;
+    font-weight: 500;
+    font-size: medium;
+    background-color: white;
+    color: rgb(0, 162, 255);
+  }
+  
+  .signup-button:hover{
+    background-color: rgb(226, 248, 255);
+    transition: .25s;
+  }
+  
+  .signup-button:active{
+    background-color: rgb(129, 196, 216);
+    color: white;
+    transition: none;
+  }
+  
+
+.menu-image{
+    height: 4rem;
+}
+
+.menu-button{
+    border: none;
+    background-color: rgb(50, 170, 255);
+    padding: 0;
+}
+
+.menu-button:hover{
+    opacity: 0.8;
+    transition:.25s;
+}
+
+.menu-button:active{
+    opacity: 0.6;
+    transition: none;
+}
+
+section{
+    display: flex;
+    position:fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    margin-top: 5rem;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+    padding-left: 1rem;
+    background-color: rgb(111, 200, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-buttons{
+    padding:0.2rem .7rem;
+    border: none;
+    margin:0.6rem;
+    border-radius: 0.2rem;
+    white-space: nowrap;
+    font-family: system-ui;
+    font-weight: 500;
+    font-size: medium;
+    background-color: white;
+    color: rgb(0, 162, 255);
+}
+
+.section-buttons:hover{
+    background-color: rgb(226, 248, 255);
+    transition: .25s;
+}
+
+.section-buttons:active{
+    background-color: rgb(129, 196, 216);
+    color: white;
+    transition: none;
+}
+
+.section-buttons a{
+    text-decoration: none;
+    color: rgb(0, 195, 255);
+}
+
+.section-buttons a:active{
+    color:white;
+}
+
+#home-button{
+    border: solid .3rem rgb(30, 161, 255);
+    border-radius:0.5rem;
+}
+
+.main-div{
+    display: flex;
+}
+
+.sidebar{
+    position:fixed;
+    left: 0;
+    display: inline-block;
+    width: 7rem;
+    text-align: center;
+    height:20rem;
+    white-space: nowrap;
+    flex-direction: column;
+    background-color: rgb(50, 170, 255);
+    color: white;
+    font-family: system-ui;
+    font-size: small;
+    padding: 1rem;
+    margin-top:10rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    margin-left:.5rem;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.sidebar h2{
+    margin-top: 0;
+    margin-bottom: .8rem;
+}
+
+section ul{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.sidebar-buttons-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar-buttons-container button{
+    border: none;
+    border-radius: .3rem;
+    width:7rem;
+    padding:0.4rem;
+    font-family: system-ui;
+    font-size: medium;
+    font-weight: 500;
+    color: rgb(0, 162, 231);
+}
+
+#spreadsheet-button{
+    border: solid .3rem rgb(0, 101, 173);
+    border-radius:0.5rem;
+}
+
+.sidebar-buttons-container button:hover{
+    background-color: rgb(226, 248, 255);
+    transition: .25s;
+}
+
+.sidebar-buttons-container button:active{
+    background-color: rgb(129, 196, 216);
+    color: white;
+    transition: none;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-family: system-ui;
+    text-align: center;
+}
+
+main p{
+    color: black;
+}
+
+main div{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.main-grid{
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: start;
+}
+
+@media(max-width:740px){
+    .main-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+

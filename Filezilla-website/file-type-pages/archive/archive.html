@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="archive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive page</title>
+</head>
+
+<body>
+    <header>
+        <div class="left-section">
+            <a href="../../landing-page/landing-page.html">
+                <h1 class="logo">FileZilla</h1>
+            </a>
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="search" placeholder="Search">
+        </div>
+        <div class="right-section">
+            <div class="buttons-container">
+                <a href="../../signup-page/signup.html"><button class="signup-button">Sign up</button></a>
+                <button class="menu-button"><img class="menu-image" src="../../assets/hamburger-4-svgrepo-com.svg"></button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="section-buttons-container">
+            <button class="section-buttons" id="home-button"><a href="../../home-page/home-page.html">Home</a></button>
+            <button class="section-buttons" id="download-button"><a
+                    href="../../download-page/download-page.html">Download</a></button>
+            <button class="section-buttons" id="section-upload-button"><a
+                    href="../../upload-page/upload-page.html">Upload</a></button>
+            <button class="section-buttons" id="about-button"><a
+                    href="../../about-page/about-page.html">About</a></button>
+        </div>
+    </section>
+    <div class="sidebar">
+        <h2>File Types</h2>
+        <div class="sidebar-buttons-container">
+            <a href="../image/image.html"><button>Image</button></a>
+            <a href="../audio/audio.html"><button>Audio</button></a>
+            <a href="../text/text.html"><button>Text</button></a>
+            <a href="../video/video.html"><button>Video</button></a>
+            <a href="archive.html"><button id="archive-button">Archive</button></a>
+            <a href="../spreadsheet/spreadsheet.html"><button>Spreadsheet</button></a>
+            <a href="../presentation/presentation.html"><button>Presentation</button></a>
+            <a href="../database/database.html"><button>Database</button></a>
+            <a href="../executable/exucutable.html"><button>Executable</button></a>
+            <a href="../font/font.html"><button>Font</button></a>
+        </div>
+    </div>
+    <main>
+        <h1>Archive Formats</h1>
+        <div class="main-grid">
+            <div>
+                <p><b>ZIP:</b> This is a popular and widely supported format that can compress and decompress files
+                    quickly
+                    and efficiently. It can store various types of files and folders, and supports password
+                    protection and encryption.</p>
+            </div>
+            <div>
+                <p><b>RAR:</b> This is a proprietary format that can achieve higher compression ratios than ZIP,
+                    especially
+                    for multimedia files. It can also create split archives, recovery records, and solid archives.
+                </p>
+            </div>
+            <div>
+                <p><b>7Z:</b> This is an open-source format that can use various compression algorithms, such as LZMA,
+                    LZMA2, Bzip2, and PPMd. It can also support AES-256 encryption, split archives, and
+                    self-extracting archives.</p>
+            </div>
+            <div>
+                <p><b>TAR:</b> This is a traditional format used on Unix-like systems, that can store multiple files and
+                    folders without compression.</p>
+            </div>
+            <div>
+                <p><b>GZIP:</b> This is a format that can compress a single file using the DEFLATE algorithm. It is often
+                        used to compress web pages, scripts, and other textual data.</p>
+            </div>
+            <div>
+                <p><b>BZIP2:</b> This is a format that can compress a single file using the Burrows–Wheeler algorithm. It
+                        can achieve better compression than GZIP, but at the cost of more CPU time and memory.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

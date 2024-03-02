@@ -617,6 +617,7 @@ p {
 	}
 	#projects .all-projects .project-info {
 		height: 100%;
+		width: 50%;
 	}
 	#projects .all-projects .project-img {
 		height: 100%;

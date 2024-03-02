@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="database.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database page</title>
+</head>
+
+<body>
+    <header>
+        <div class="left-section">
+            <a href="../../landing-page/landing-page.html">
+                <h1 class="logo">FileZilla</h1>
+            </a>
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="search" placeholder="Search">
+        </div>
+        <div class="right-section">
+            <div class="buttons-container">
+                <a href="../../signup-page/signup.html"><button class="signup-button">Sign up</button></a>
+                <button class="menu-button"><img class="menu-image" src="../../assets/hamburger-4-svgrepo-com.svg"></button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="section-buttons-container">
+            <button class="section-buttons" id="home-button"><a href="../../home-page/home-page.html">Home</a></button>
+            <button class="section-buttons" id="download-button"><a
+                    href="../../download-page/download-page.html">Download</a></button>
+            <button class="section-buttons" id="section-upload-button"><a
+                    href="../../upload-page/upload-page.html">Upload</a></button>
+            <button class="section-buttons" id="about-button"><a
+                    href="../../about-page/about-page.html">About</a></button>
+        </div>
+    </section>
+    <div class="sidebar">
+        <h2>File Types</h2>
+        <div class="sidebar-buttons-container">
+            <a href="../image/image.html"><button>Image</button></a>
+            <a href="../audio/audio.html"><button>Audio</button></a>
+            <a href="../text/text.html"><button>Text</button></a>
+            <a href="../video/video.html"><button>Video</button></a>
+            <a href="../archive/archive.html"><button>Archive</button></a>
+            <a href="../spreadsheet/spreadsheet.html"><button>Spreadsheet</button></a>
+            <a href="../presentation/presentation.html"><button>Presentation</button></a>
+            <a href="database.html"><button id="database-button">Database</button></a>
+            <a href="../executable/exucutable.html"><button>Executable</button></a>
+            <a href="../font/font.html"><button>Font</button></a>
+        </div>
+    </div>
+    <main>
+        <h1>Database Formats</h1>
+        <div class="main-grid">
+            <div>
+                <p><b>Relational database.</b> This is a database that stores data in tables, which consist of rows and
+                    columns. Each row represents a record, and each column represents a field or attribute.
+                    Relational databases use a standard query language (SQL) to manipulate and retrieve data.</p>
+            </div>
+            <div>
+                <p><b>Document database.</b> This is a database that stores data in documents, which are self-contained
+                    units of data that can have various structures and formats, such as JSON, XML, or BSON. Document
+                    databases are flexible and scalable, and can handle complex and nested data.</p>
+            </div>
+            <div>
+                <p><b>Key-value database.</b> This is a database that stores data as pairs of keys and values, where
+                    each
+                    key is a unique identifier and each value is the data associated with that key. Key-value
+                    databases are simple and fast, and can handle large amounts of data.</p>
+            </div>
+            <div>
+                <p><b>Graph database.</b> This is a database that stores data as nodes and edges, where each node
+                    represents
+                    an entity and each edge represents a relationship between entities. Graph databases are useful
+                    for modeling complex and interconnected data, such as social networks, recommendation systems,
+                    or fraud detection.</p>
+            </div>
+            <div>
+                <p><b>Object-oriented database.</b> This is a database that stores data as objects, which are instances
+                    of
+                    classes that have attributes and methods. Object-oriented databases are compatible with
+                    object-oriented programming languages, such as Java, C++, or Python.</p>
+            </div>
+            <div>
+                <p><b>Hierarchical database.</b> This is a database that stores data in a tree-like structure, where each
+                        node has a parent node and zero or more child nodes. Hierarchical databases are efficient and
+                        simple, and can handle hierarchical data, such as file systems, organizational charts, or XML
+                        documents.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
