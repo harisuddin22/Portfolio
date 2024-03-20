@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-color:rgb(255, 226, 254);
+  background-color:rgb(255, 255, 255);
   height:100%;
   width:100%;
   margin-top: 5rem;
@@ -209,33 +209,6 @@ a {
   opacity:0.5;
 }
 
-.cart-button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius:50%;
-  border:none;
-  height:3rem;
-  width: 3rem;
-  background-color: white;
-  border:1px solid white;
-  padding: 0.3rem;
-}
-
-.cart-button:hover{
-  opacity:0.7;
-}
-
-.cart-button:active{
-  opacity: 0.4;
-  transition: none;
-}
-
-.cart-image{
-  height: 2rem;
-  border-radius:50%;
-}
-
 main{
     display: flex;
     justify-content: center;
@@ -332,46 +305,60 @@ main h1{
 .card {
   max-width: 310px;
   margin: 50px auto;
-  padding: 10px;
-  background-image:linear-gradient(rgba(255, 178, 255, 0.504),rgba(202, 202, 255, 0.468));
-  border-radius: 10px;
+  padding-bottom: 10px;
+  background-image:linear-gradient(rgba(255, 255, 255),rgb(255, 255, 255));
+  border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
-  height:29rem;
+  height:30rem;
   width:16rem;
 }
 
 .card img{
-  border-radius:0.6rem;
-  margin-top:0.3rem;
+  margin-top:0;
   margin-bottom: 1rem;
   object-fit: cover;
-  height:60%;
-  width:100%;
+  height:100%;
+  border: 1px solid rgba(0, 0, 0, 0.397);
+  
 }
 
 h2 {
   color: #000000;
-  font-size: x-large;
-  font-weight: 400;
+  font-size:1.4rem;
+  font-weight: 300;
+  align-self: flex-start;
+  margin-left: 1rem;
+}
+
+.price-tag-container{
+  display: flex;
 }
 
 .price {
   color: #000000;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
-  margin:1rem 0;
+  margin:0 0 10px 1rem;
+}
+
+.card-btn-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:4rem;
 }
 
 .buy-btn {
   padding: 10px 20px;
+  width: 95%;
   background-color:var(--main-background-color);
   color: #ffffff;
   font-size: large;
   font-weight: 400;
   white-space: nowrap;
   text-decoration: none;
-  border-radius: 5px;
   transition: 0.3s ease;
   border: none;
   margin: 0 auto;
