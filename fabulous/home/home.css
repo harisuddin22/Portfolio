@@ -158,7 +158,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   flex: 1;
-  gap:2vw;
+  gap:6vw;
   margin-right:1rem;
 }
 
@@ -166,7 +166,7 @@ a {
   border: none;
   background-color: transparent;
   font-size:1.3rem;
-  font-weight: 400;
+  font-weight: 300;
   cursor: pointer;
   white-space: nowrap;
   color: white;
@@ -330,7 +330,7 @@ main h1{
 }
 
 .card {
-  max-width: 300px;
+  max-width: 310px;
   margin: 50px auto;
   padding: 10px;
   background-image:linear-gradient(rgba(255, 178, 255, 0.504),rgba(202, 202, 255, 0.468));
@@ -338,7 +338,7 @@ main h1{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   height:29rem;
-  width:17rem;
+  width:16rem;
 }
 
 .card img{
@@ -347,7 +347,7 @@ main h1{
   margin-bottom: 1rem;
   object-fit: cover;
   height:60%;
-  width:95%;
+  width:100%;
 }
 
 h2 {

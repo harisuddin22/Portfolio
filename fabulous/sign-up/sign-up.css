@@ -144,7 +144,7 @@
     display: flex;
     justify-content: flex-end;
     flex: 1;
-    gap:2vw;
+    gap:6vw;
     margin-right:1rem;
   }
   
@@ -152,7 +152,7 @@
     border: none;
     background-color: transparent;
     font-size:1.3rem;
-    font-weight: 400;
+    font-weight: 300;
     cursor: pointer;
     white-space: nowrap;
     color: white;
@@ -170,106 +170,121 @@
 
 
 
-.signup-form {
-  width: 25vw;
-  min-width:25vw;
-  max-width: 25vw;
-  background-image:linear-gradient(rgb(231, 101, 231),rgb(129, 129, 255));
-  border: 1px solid black;
-  padding: 1rem 3rem;
-  border-radius:0.3rem;
-  margin-top: 5rem;
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
 }
 
-.title{
-  text-align: center;
-  font-size: 4vh;
-  font-family: system-ui;
-  color: white;
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5rem;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+.login-button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 100;
 }
 
-.form-group {
-  position: relative;
-  margin: 20px 0;
+.login-button:hover{
+    opacity: 0.7;
 }
 
-input {
-  width: 100%;
-  height: 40px;
-  border: none;
-  outline: none;
-  padding: 10px;
-  background-color: #eeeeee5b;
-  border-radius: 0.3rem;
+.login-button:active{
+    opacity: 0.3;
+    transition: none;
 }
 
-label {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  color: #ffffff;
-  pointer-events: none;
-  transition: 0.3s;
-  white-space: nowrap;
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
 }
-
-input:focus + label,
-input:not(:placeholder-shown) + label {
-  top: -0.5rem;
-  font-size: 12px;
-  color: rgb(255, 255, 255);
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
 }
-
-.checkbox-container{
-  display: flex;
-  justify-content:space-evenly;
-  white-space: nowrap;
-  align-items: center;
-}
-
-.checkbox{
-  height:1.2rem;
-  width:2rem;
-}
-
-.checkbox-container p{
-  margin-top: 0.7rem;
-  color: white;
-}
-
-.checkbox-container h4{
-  text-decoration: underline;
-  cursor: pointer;
-  font-size: medium;
-  color: white;
-}
-
-.checkbox-container h4:hover{
-  opacity: 0.7;
-}
-
-.checkbox-container h4:active{
-  opacity: 0.4;
-  transition: none;
-}
-
-.sign-up-button {
-  width: 100%;
-  height: 40px;
-  border: none;
-  outline: none;
-  background-color: rgb(41, 0, 52);
-  color: white;
-  font-size: 16px;
-  border-radius: 0.34rem;
-}
-
-.sign-up-button:hover {
-  background-color: #333333;
-}
-
-.sign-up-button:active{
-  opacity: 0.5;
-  transition: none;
+.register p a:hover{
+    text-decoration: underline;
 }

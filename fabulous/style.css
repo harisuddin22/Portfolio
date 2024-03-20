@@ -114,14 +114,14 @@ a{
     display: flex;
     justify-content: flex-end;
     flex: 1;
-    gap:2vw;
+    gap:6vw;
 }
 
 .header-buttons{
     border: none;
     background-color: transparent;
     font-size:1.3rem;
-    font-weight: 400;
+    font-weight: 300;
     cursor: pointer;
     white-space: nowrap;
     color: white;
